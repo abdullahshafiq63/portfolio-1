@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
-    <div class="pt-6 pb-8 space-y-2 md:space-y-5">
+    <div class="pt-2 pb-2 space-y-2 md:space-y-5">
       <h1
         class="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14"
       >
@@ -12,7 +12,7 @@
     </div>
     <main class="relative mb-auto">
       <div class="">
-        <div class="container py-12">
+        <div class="container py-2">
           <div class="flex flex-wrap -m-4">
             <project-card
               v-for="item in projectsData"
@@ -24,6 +24,7 @@
               :tech1="item.tech1"
               :tech2="item.tech2"
               :tech3="item.tech3"
+              :web="item.web"
             ></project-card>
           </div>
         </div>
@@ -41,14 +42,14 @@ export default {
     };
   },
   head: {
-    title: "Md Solaiman | Projects",
+    title: "Abdullah Shafiq | Projects",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Some of Projects developed by Solaiman",
+        content: "Some of Projects developed by Abdullah",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

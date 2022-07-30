@@ -19,7 +19,7 @@
                 ><img class="w-6 h-6" src="~assets/icon/external.svg"
               /></a>
             </div>
-            <div class="mx-1">
+            <!-- <div class="mx-1">
               <a
                 class="text-sm text-gray-500 transition hover:text-gray-600"
                 target="_blank"
@@ -28,8 +28,12 @@
                 ><span class="sr-only">github</span
                 ><img class="w-6 h-6" src="~assets/icon/github_new.svg"
               /></a>
-            </div>
+            </div> -->
           </div>
+        </div>
+        <div class="mb-3 mt-3 flex justify-center items-center"
+          :class="isWebProject ? 'h-96' : 'h-96'">
+          <img :class="[isWebProject ? 'h-60' : 'h-96', 'border border-black']" :src="require(`~/assets/${projectGithub}`)" />
         </div>
         <h2 class="text-2xl font-bold leading-8 tracking-tight mb-3">
           {{ projectTitle }}
@@ -38,7 +42,7 @@
           {{ projectDescription }}
         </p>
         <div class="flex flex-row justify-between">
-          <div class="text-gray-400 text-sm font-extralight">
+          <div class="text-indigo-600 text-sm">
             {{ projectTech1 }} • {{ projectTech2 }} • {{ ProjectTech3 }}
           </div>
         </div>
@@ -52,7 +56,7 @@ import Folder from "../assets/icon/folder.svg?inline";
 import External from "../assets/icon/external.svg?inline";
 import Github from "../assets/icon/github.svg?inline";
 export default {
-  props: ["title", "description", "href", "github", "tech1", "tech2", "tech3"],
+  props: ["title", "description", "href", "github", "tech1", "tech2", "tech3", "web"],
   components: { Folder, External, Github },
   data() {
     return {
@@ -63,6 +67,7 @@ export default {
       projectTech1: this.tech1,
       projectTech2: this.tech2,
       ProjectTech3: this.tech3,
+      isWebProject: this.web,
     };
   },
 };

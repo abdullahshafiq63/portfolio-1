@@ -1,20 +1,18 @@
 <template>
   <div class="mb-6">
     <h2
-      class="mt-6 text-4xl text-gray-700 font-bold capitalize dark:text-blue-200"
+      class="text-4xl text-gray-700 font-bold capitalize dark:text-blue-200"
     >
       👋 Hola , Good Day !
     </h2>
-    <p class="mt-8 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book. It has survived not only five centuries, but
-      also the leap into electronic typesetting, remaining essentially
-      unchanged. It was popularised in the 1960s with the release of Letraset
-      sheets containing Lorem Ipsum passages, and more recently with desktop
-      publishing software like Aldus PageMaker including versions of Lorem
-      Ipsum.
+    <p class="mt-4 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify">
+      I am an experienced web and mobile developer with 6+ years of experience which includes working on different projects and products. I aim to work in a challenging work environment where I can utilize my expertise in technical skills, development, and implementation of new ideas and contribute to the growth of the organization/Individuals.
+    </p>
+    <p class="mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify">
+      I am good at understanding the requirements and ideas and converting them into a product. Also, a perfectionist when it comes to designing a web or mobile app (UI/UX) which in return makes the user's experience better.
+    </p>
+    <p class="mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify">
+      My working process highlights a clear understanding of business details and converting them into code.
     </p>
   </div>
 </template>
